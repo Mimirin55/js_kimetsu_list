@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="'ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>鬼滅の刃API</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <form name="form">
+      <div class="kimetsu-radio">
+        <input type="radio" id="all" name="character" value="all" onchange="check_form()" />
+        <label for="all">全キャラクター</label>
+      </div>
+      <div class="kimetsu-radio">
+        <input type="radio" id="kisatsutai" name="character" value="kisatsutai" onchange="check_form()" />
+        <label for="kisatsutai">鬼殺隊</label>
+      </div>
+      <div class="kimetsu-radio">
+        <input type="radio" id="hashira" name="character" value="hashira" onchange="check_form()" />
+        <label for="hashira">柱</label>
+      </div>
+      <div class="kimetsu-radio">
+        <input type="radio" id="oni" name="character" value="oni" onchange="check_form()" />
+        <label for="oni">鬼</label>
+      </div>
+    </form>
+    <div id="loading">Loading...</div>
+    <div id="kimetsu_container" class="kimetsu_container">
+    <script src="main.js"></script>
+    </div>
+  </body>
+</html>
